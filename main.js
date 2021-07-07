@@ -20,10 +20,10 @@ function GoRequest (urlgu) {
 
 
 btnDec.addEventListener('click', async () => {
-  const valInp1 = namber(value1.value());
-  const valInp2 = namber(value2.value());
-  consol.log('test',valInp1);
-  if (100 <= n1 && n1 <= 300 && 100 <= n2 && n2 <= 300) {
+  const valInp1 = parseInt(value1.value,10);
+  const valInp2 = parseInt(value2.value,10);
+  console.log('test',valInp1);
+  if (100 <= valInp1 && valInp1 <= 300 && 100 <= valInp2 && valInp2 <= 300) {
       const url = `https://picsum.photos/${valInp1}/${valInp2}`;
       consol.log('test2',url);
       const displayResult = await GoRequest(url);
